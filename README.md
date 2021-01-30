@@ -22,10 +22,10 @@
     <img src="https://img.shields.io/discord/598787196421668894?color=%237289DA&label=Support&logo=discord&logoColor=white" alt="Support Server Online">
   </a>
   <a href="https://github.com/HellCatVN">
-    <img src="https://madewithlove.now.sh/vn?heart=true&template=flat" alt="Country">
+    <img src="https://img.shields.io/static/v1?label=Made%20with%20%E2%9D%A4&message=by%20HellCatVN&color=brightgreen" alt="HellCatVN">
   </a>
 </p>
 
 ---
 
-Check the docs on : 
+Check the docs on : Coming Soon
