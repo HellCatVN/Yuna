@@ -7,8 +7,6 @@ description: >-
 # Home
 
 {% hint style="danger" %}
-
-
 **Make sure to read this before reading another part of the wiki :**
 
 * Do not literally write `[ ] ( )` in your commands. 
