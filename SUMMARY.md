@@ -8,3 +8,8 @@
 
 * [Music](commands/music.md)
 
+## Configuration
+
+* [Settings](configuration/settings.md)
+* [Permissions](configuration/permissions.md)
+
