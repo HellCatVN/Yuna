@@ -5,7 +5,7 @@ description: All help with music commands.
 # Music
 
 {% hint style="info" %}
-🧠**Note:**
+🧠 **Note:**
 
 **`command`** `(`_`optional`_`) [required] [choice|choice_2]`
 
