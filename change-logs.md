@@ -4,6 +4,23 @@ description: All Yuna's update logs
 
 # Change Logs
 
+## 1.2.0 - 2021-18-02
+
+### Fixed
+
+* Can't find channel when track start playing
+
+### Changed
+
+* Multiple language now can be translate by community through pull request at repo: [https://github.com/HellCatVN/yuna](https://github.com/HellCatVN/yuna)
+* Remove unnecessary cache: channels, emojis , roles, etc...
+* Remove emoji in multiple language attach to client
+
+### Added
+
+* Support spotify playing through equivalent video on YouTube
+* Support playing soundcloud music
+
 ## 1.1.0 - 2021-24-01
 
 ### Fixed
