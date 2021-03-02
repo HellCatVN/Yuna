@@ -65,12 +65,20 @@
 		"all": "All",
 		"single": "Single",
 		"none": "Off",
-		"on": "**🔁 | {{- author }},**I have turn **on** loop all music queue",
-		"off": "**{{-emoji}} | {{- author }},**I have turn **off** loop all music queue"
+		"on": "**🔁 | {{- author }}, **I have turn **on** loop all music queue",
+		"off": "**{{-emoji}} | {{- author }}, **I have turn **off** loop all music queue"
 	},
 	"repeat": {
-		"on": "**🔂 | {{- author }},**I have turn **on** repeat the current song",
-		"off": "**{{-emoji}} | {{- author }},**I have turn **off** repeat the current song"
+		"on": "**🔂 | {{- author }}, **I have turn **on** repeat the current song",
+		"off": "**{{-emoji}} | {{- author }}, **I have turn **off** repeat the current song"
+	},
+	"nightcore": {
+		"on": "**{{-emoji}} | {{- author }}, **I have turn **on** nightcore mode",
+		"off": "**{{-emoji}} | {{- author }}, **I have turn **off** nightcore mode"
+	},
+	"vaporware": {
+		"on": "**{{-emoji}} | {{- author }}, **I have turn **on** vaporware mode",
+		"off": "**{{-emoji}} | {{- author }}, **I have turn **off** vaporware mode"
 	},
 	"volume": {
 		"set": "**🔊 | {{- author }},** Volume succesfully changed to **{{volume}}** %"

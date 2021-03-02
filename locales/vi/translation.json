@@ -62,12 +62,20 @@
 		"all": "Tất cả",
 		"single": "Bài hát",
 		"none": "Tắt",
-		"on": "**🔁 | {{- author }},**Đã **bật** lặp lại danh sách bài hát",
-		"off": "**{{-emoji}} | {{- author }},**Đã **tắt** lặp lại danh sách bài hát"
+		"on": "**🔁 | {{- author }}, **Đã **bật** lặp lại danh sách bài hát",
+		"off": "**{{-emoji}} | {{- author }}, **Đã **tắt** lặp lại danh sách bài hát"
 	},
 	"repeat": {
-		"on": "**🔂 | {{- author }},**Đã **bật** lặp lại bài hát hiện tại",
-		"off": "**{{-emoji}} | {{- author }},**Đã **tắt** lặp lại bài hát hiện tại"
+		"on": "**🔂 | {{- author }}, **Đã **bật** lặp lại bài hát hiện tại",
+		"off": "**{{-emoji}} | {{- author }}, **Đã **tắt** lặp lại bài hát hiện tại"
+	},
+	"nightcore": {
+		"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ nightcore",
+		"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ nightcore"
+	},
+	"vaporware": {
+		"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ vaporware",
+		"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ vaporware"
 	},
 	"volume": {
 		"set": "**🔊 | {{- author }},** Âm lượng đã được đặt ở mức **{{volume}}** %"
