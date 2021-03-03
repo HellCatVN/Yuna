@@ -77,6 +77,14 @@
 		"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ vaporware",
 		"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ vaporware"
 	},
+	"speed": {
+		"err1": "**{{-emoji}} | {{- author }}, ** Tốc độ chỉ có thể thay đổi từ **0.1** - **2.5**",
+		"change": "**{{-emoji}} | {{- author }}, ** Đã chỉnh tốc độ phát thành **{{speed}}**"
+	},
+	"bassboost" : {
+		"err1": "**{{-emoji}} | {{- author }}, ** Chỉ nhận các chế độ `off, low, medium, high, insane, miaow`",
+		"change": "**{{-emoji}} | {{- author }}, ** Đã thay đổi bass thành chế độ **{{speed}}**"
+	},
 	"volume": {
 		"set": "**🔊 | {{- author }},** Âm lượng đã được đặt ở mức **{{volume}}** %"
 	}

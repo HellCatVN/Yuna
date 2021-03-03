@@ -80,6 +80,14 @@
 		"on": "**{{-emoji}} | {{- author }}, **I have turn **on** vaporware mode",
 		"off": "**{{-emoji}} | {{- author }}, **I have turn **off** vaporware mode"
 	},
+	"speed": {
+		"err1": "**{{-emoji}} | {{- author }}, ** Playing speed is from **0.1** to **2.5**",
+		"change": "**{{-emoji}} | {{- author }}, ** Change playing speed to **{{speed}}**"
+	},
+	"bassboost": {
+		"err1": "**{{-emoji}} | {{- author }}, ** Available bass mode is `off, low, medium, high, insane, miaow`",
+		"change": "**{{-emoji}} | {{- author }}, ** Bass is changed into **{{mode}}** mode"
+	},
 	"volume": {
 		"set": "**🔊 | {{- author }},** Volume succesfully changed to **{{volume}}** %"
 	}
