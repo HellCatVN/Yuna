@@ -26,7 +26,11 @@ description: All help with music commands.
 | **`stop`** | Stops the player and clears the queue. |  |
 | **`repeat`** | Enables or disables the repeat of current song |  |
 | **`shuffle`** | Shuffle the queue. |  |
-| **`volume [value]`** | Sets the playback volume. Accepted values are from 0 to 100 |  |
+| **`volume [value]`** | Sets the playback volume. Accepted values are from **0** to **100** |  |
+| **`bassboost [level]`** | Changes the player's bass up to 5 level : **`OFF, LOW, MEDIUM, HIGH, INSANE, WTF`** .You can use the equalizer to make adjustments as you want |  |
+| **`nightcore`** | Enables or disables Nightcore music mode |  |
+| **`vaporwave`** | Enables or disables vaporwave music mode |  |
+| **`speed [times]`** | Change music playing speed from **0.1** to **2.6** |  |
 
 
 

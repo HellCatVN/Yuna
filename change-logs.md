@@ -4,6 +4,20 @@ description: All Yuna's update logs
 
 # Change Logs
 
+## 2.0.0 - 2021-13-05
+
+### Fixed
+
+* Fix stop playing music when finding new song
+
+### Changed
+
+* Upgrade version of music player core
+
+### Added
+
+* Add multiple music effect commands : BassBoost,  Nightcore , Vaporwave, Change Speed.
+
 ## 1.2.0 - 2021-18-02
 
 ### Fixed
