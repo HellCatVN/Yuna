@@ -1,94 +1,182 @@
 {
 	"common": {
-		"nothing_playing": "**{{- emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!",
-		"not_in_room": "**{{- emoji}} | {{- author}}, ** You're not in voice channel",
-		"not_same_room": "**{{- emoji}} | {{- author}}, ** You're not in the same voice channel!"
+		"voice": {
+			"not_joined": "**{{- emoji}} | {{- author}}, ** You're not in voice channel",
+			"not_same_room": "**{{- emoji}} | {{- author}}, ** You're not in the same voice channel!"
+		},
+		"music": {
+			"nothing_playing": "**{{- emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
+		}
 	},
 	"framework": {
 		"cooldown": "**⏰ | {{-author}}, **Please wait `{{remaining}}` s before you can use `{{commandName}}`"
 	},
-	"general": {
-		"ping": {
-			"message": "**📶 | {{-author}}, **Pong `{{ping}}` ms"
-		},
-		"prefix": {
-			"message": "**{{-emoji }} | {{-author}}, ** Prefix of this server : `{{prefix}}` ",
-			"add": "**{{-emoji }} | {{-author}}, ** Prefix `{{prefix}}` is added",
-			"remove": "**{{-emoji }} | {{-author}}, ** Prefix `{{prefix}}` is removed",
-			"change": "**{{-emoji }} | {{-author}}, ** Prefix is changed to `{{prefix}]`"
-		},
-		"language": {
-			"current": "**🌐 | {{- author }}, ** This server is using `{{-language}}` as main language",
-			"not_found": "**{{-emoji}} | {{- author }}, ** I can speak only these languages: `{{-languages}}`",
-			"success": "**{{-emoji}} | {{- author }}, ** Main language of this server is changed to `{{-language}}`"
+	"precondition": {
+		"owner_only": "**{{- icon }} | {{- author }},** This command can only be used by the owner.",
+		"server_created": {
+			"error": "**{{- icon }} | {{- author }},** Not found or can not create server record"
 		}
 	},
-	"add": {
-		"song": {
-			"author": "🎶 Add song to queue",
-			"time_to": "Time to this song",
-			"index": "Queue Number"
+	"general": {
+		"ping": {
+			"name": "Ping command",
+			"example": "```{{-prefix}}{{alias}}```",
+			"description": "Ping pong"
 		},
-		"list": {},
-		"channel": "Channel",
-		"time": "Duration"
+		"server_info": {
+			"name": "Server Information command",
+			"embed_title": "Server information",
+			"embed_id": "ID",
+			"embed_owner": "Owner",
+			"embed_verification": "Verification level",
+			"embed_channels": "Channels",
+			"embed_voice_channels": "Voice channels",
+			"embed_chat_channels": "Chat channels",
+			"embed_role": "Role",
+			"embed_members": "Members",
+			"embed_emojis": "Emojis",
+			"embed_emojis_animate": "Emojis animated",
+			"example": "```{{-prefix}}{{alias}}```",
+			"description": "Get server information"
+		},
+		"bot_info": {
+			"name": "Bot Information command",
+			"embed_key": "Bot information",
+			"embed_id": "ID",
+			"embed_username": "Username",
+			"embed_verified": "Verified",
+			"embed_default_language": "Default language",
+			"cannot_find_info": "Cannot find BotInfo in DB",
+			"un_synchronized": "Saved info has some changes need to be updated",
+			"already_exist": "Bot Info already exist and updated",
+			"create_success": "Successfully created Bot Info",
+			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
+			"description": "Setting bot information"
+		},
+		"db": {
+			"db_unreachable": "Database unreachable!"
+		},
+		"set_server_lng": {
+			"name": "Set Server Language command",
+			"success": "**{{-icon}} | **Current language: {{-lng}}",
+			"error": "**{{-icon}} | **Some error, please try again",
+			"no_support_lng": "**{{-icon}} | {{-botName}}** Does not support this language!!!",
+			"example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
+			"description": "Set language server"
+		},
+		"prefix": {
+			"name": "Prefix command",
+			"add": "**{{-icon}} | **Added `{{-prefix}}` as new prefix",
+			"list_prefixes": "List of prefixes: `{{-prefixes}}`",
+			"duplicate_prefix": "**{{-icon}} | **`{{-prefix}}` have used!!!",
+			"not_found_prefix": "**{{-icon}} | **Prefix `{{-prefix}}` not found!!!",
+			"can_not_remove": "**{{-icon}} | **Can not remove prefix `{{-prefix}}`!!! At least one prefix in guild.",
+			"remove": "**{{-icon}} | **Prefix `{{-prefix}}` has been removed",
+			"example": "```{{-prefix}}{{alias}} add {prefix}```",
+			"description": "Config bot prefix"
+		},
+		"help": {
+			"name": "Help command",
+			"embed_list": "Here is the list of commands of **{{-botName}}**!!! \n For more info on a specific command, use `{{-prefix}}help {command}`",
+			"embed_title": "{{-command}} command",
+			"embed_aliases": "Aliases",
+			"embed_description": "Description",
+			"embed_example": "Example command",
+			"not_have_command": "**{{-icon}} | {{-botName}}** does not supported this command!!!",
+			"not_have_permission": "**{{-icon}} | {{-username}} | **You do not have permission to use this command!!!",
+			"example": "```{{-prefix}}{{alias}}```",
+			"description": "List of command"
+		}
 	},
-	"playing": "**{{- playingEmoji}} | {{- author}}, ** Playing song **{{- songName}}**",
-	"end_queue": "**{{- endQueueEmoji}} | ** ***Queue has ended and I'm leaving, Matane~***",
-	"kicked": "**{{- emoji}} | ** ***I got kicked from the voice channel, and im clearing the queue.***",
-	"stop": {
-		"success": "**{{- emoji}} | {{-author}}, ** Stop playing music"
+	"voice": {
+		"set_bitrate": {
+			"name": "Set bitrate command",
+			"example": "```{{-prefix}}{{alias}} {bitrate}```",
+			"description": "Set bitrate of voice channel",
+			"illegal": "**{{-icon}} | {{-username}} | **Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!"
+		},
+		"change_region": {
+			"name": "Change Region command",
+			"example": "```{{-prefix}}{{alias}} {region} | {list}```",
+			"description": "Set region for voice channel and get regions list",
+			"illegal": "**{{-icon}} | {{-username}} | **Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions."
+		}
 	},
-	"skip": {
-		"success": "**⏭️ | {{-author}}, ** The current song is skipped"
+	"music": {
+		"add": {
+			"song": {
+				"author": "🎶 Add song to queue",
+				"time_to": "Time to this song",
+				"index": "Queue Number"
+			},
+			"list": {},
+			"channel": "Channel",
+			"time": "Duration"
+		},
+		"playing": "**{{- playingEmoji}} | {{- author}}, ** Playing song **{{- songName}}**",
+		"end_queue": "**{{- endQueueEmoji}} | ** ***Queue has ended and I'm leaving, Matane~***",
+		"kicked": "**{{- emoji}} | ** ***I got kicked from the voice channel, and im clearing the queue.***",
+		"stop": {
+			"success": "**{{- emoji}} | {{-author}}, ** Stop playing music"
+		},
+		"skip": {
+			"success": "**⏭️ | {{-author}}, ** The current song is skipped"
+		},
+		"prev": {
+			"success": "**⏮️ | {{-author}}, ** Playing previous song",
+			"no_previous": "**{{-emoji}} | {{-author}}, ** There is no previous song ! Bakkkaa!!!"
+		},
+		"shuffle": {
+			"success": "**🔀 | {{-author}}, ** I have shuffle your playlist"
+		},
+		"nowplay": {
+			"description": "View the current playing list"
+		},
+		"queue": {
+			"volume": "**Volume:** `{{cur_vol}}`",
+			"loop": "**Loop:** `{{loop}}`",
+			"autoplay": "**Auto Play:** `{{autoplay}}`",
+			"author": "Playlist | {{ guild_name }}",
+			"title": "🎶 Queue ({{ queue_length }})",
+			"now_playing": "⁣⁣            ⬐----**Now Playing**-----⬎\n**❯** [{{-songTitle }}]({{-songUrl }}) ({{ playedTime }}/{{ songLength }})\n            ⬑----**Now Playing**-----⬏\n",
+			"pagination": "Total Duration : {{ total_time }}   |   Page: {{ current_page }}/{{ total_page }}"
+		},
+		"loop": {
+			"all": "All",
+			"single": "Single",
+			"none": "Off",
+			"on": "**🔁 | {{- author }}, **I have turn **on** loop all music queue",
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** loop all music queue"
+		},
+		"repeat": {
+			"on": "**🔂 | {{- author }}, **I have turn **on** repeat the current song",
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** repeat the current song"
+		},
+		"nightcore": {
+			"on": "**{{-emoji}} | {{- author }}, **I have turn **on** nightcore mode",
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** nightcore mode"
+		},
+		"vaporware": {
+			"on": "**{{-emoji}} | {{- author }}, **I have turn **on** vaporware mode",
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** vaporware mode"
+		},
+		"speed": {
+			"err1": "**{{-emoji}} | {{- author }}, ** Playing speed is from **0.1** to **2.5**",
+			"change": "**{{-emoji}} | {{- author }}, ** Change playing speed to **{{speed}}**"
+		},
+		"bassboost": {
+			"err1": "**{{-emoji}} | {{- author }}, ** Available bass mode is `off, low, medium, high, insane, miaow`",
+			"change": "**{{-emoji}} | {{- author }}, ** Bass is changed into **{{mode}}** mode"
+		},
+		"volume": {
+			"set": "**🔊 | {{- author }},** Volume succesfully changed to **{{volume}}** %"
+		}
 	},
-	"prev": {
-		"success": "**⏮️ | {{-author}}, ** Playing previous song",
-		"no_previous": "**{{-emoji}} | {{-author}}, ** There is no previous song ! Bakkkaa!!!"
-	},
-	"shuffle": {
-		"success": "**🔀 | {{-author}}, ** I have shuffle your playlist"
-	},
-	"nowplay": {
-		"description": "View the current playing list"
-	},
-	"queue": {
-		"volume": "**Volume:** `{{cur_vol}}`",
-		"loop": "**Loop:** `{{loop}}`",
-		"autoplay": "**Auto Play:** `{{autoplay}}`",
-		"author": "Playlist | {{ guild_name }}",
-		"title": "🎶 Queue ({{ queue_length }})",
-		"now_playing": "⁣⁣            ⬐----**Now Playing**-----⬎\n**❯** [{{-songTitle }}]({{-songUrl }}) ({{ playedTime }}/{{ songLength }})\n            ⬑----**Now Playing**-----⬏\n",
-		"pagination": "Total Duration : {{ total_time }}   |   Page: {{ current_page }}/{{ total_page }}"
-	},
-	"loop": {
-		"all": "All",
-		"single": "Single",
-		"none": "Off",
-		"on": "**🔁 | {{- author }}, **I have turn **on** loop all music queue",
-		"off": "**{{-emoji}} | {{- author }}, **I have turn **off** loop all music queue"
-	},
-	"repeat": {
-		"on": "**🔂 | {{- author }}, **I have turn **on** repeat the current song",
-		"off": "**{{-emoji}} | {{- author }}, **I have turn **off** repeat the current song"
-	},
-	"nightcore": {
-		"on": "**{{-emoji}} | {{- author }}, **I have turn **on** nightcore mode",
-		"off": "**{{-emoji}} | {{- author }}, **I have turn **off** nightcore mode"
-	},
-	"vaporware": {
-		"on": "**{{-emoji}} | {{- author }}, **I have turn **on** vaporware mode",
-		"off": "**{{-emoji}} | {{- author }}, **I have turn **off** vaporware mode"
-	},
-	"speed": {
-		"err1": "**{{-emoji}} | {{- author }}, ** Playing speed is from **0.1** to **2.5**",
-		"change": "**{{-emoji}} | {{- author }}, ** Change playing speed to **{{speed}}**"
-	},
-	"bassboost": {
-		"err1": "**{{-emoji}} | {{- author }}, ** Available bass mode is `off, low, medium, high, insane, miaow`",
-		"change": "**{{-emoji}} | {{- author }}, ** Bass is changed into **{{mode}}** mode"
-	},
-	"volume": {
-		"set": "**🔊 | {{- author }},** Volume succesfully changed to **{{volume}}** %"
+	"event": {
+		"message_create": {
+			"warning_invite_link": "**{{-icon}} | {{-author}} | **Please don't send the invite links from another server!!!"
+		},
+		"mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`",
+		"global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!"
 	}
 }
