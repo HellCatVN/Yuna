@@ -1,5 +1,7 @@
 {
 	"common": {
+		"on": "On",
+		"off": "Off",
 		"voice": {
 			"not_joined": "**{{-emoji}} | {{-username}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
 			"not_same_room": "**{{- emoji}} | {{- author}}, ** Bạn đang không cùng phòng trò chuyện với tôi"
@@ -120,7 +122,7 @@
 			"success": "**⏭️ | {{-author}}, ** Bài hát đã được bỏ qua"
 		},
 		"prev": {
-			"success": "**⏮️ | {{-author}}, ** Trở lại bài hát trước đó",
+			"success": "**⏮️ | {{-author}}, **Đã trở lại bài hát trước đó",
 			"no_previous": "**{{-emoji}} | {{-author}}, ** Không có bài hát nào đã được phát trước đó"
 		},
 		"shuffle": {
@@ -163,7 +165,7 @@
 		},
 		"bassboost": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Chỉ nhận các chế độ `off, low, medium, high, insane, miaow`",
-			"change": "**{{-emoji}} | {{- author }}, ** Đã thay đổi bass thành chế độ **{{speed}}**"
+			"change": "**{{-emoji}} | {{- author }}, ** Đã thay đổi bass thành chế độ **{{mode}}**"
 		},
 		"volume": {
 			"set": "**🔊 | {{- author }},** Âm lượng đã được đặt ở mức **{{volume}}** %"
