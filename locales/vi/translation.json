@@ -177,5 +177,11 @@
 		},
 		"mention_prefix": "Tiếp đầu ngữ trong server: `{{-prefixes}}`",
 		"global_error": "**{{-icon}} | {{-author}} | **Đã xảy ra lỗi, thử lại sau nhaaa!!!"
+	},
+	"together": {
+		"youtube": {
+			"err": "**{{- emoji }} | {{- author }},** Không thể chạy **YouTube Together**!",
+			"success": "**{{- emoji }} | {{- author }},** Ấn đường dẫn để xem Youtube cùng nhau \nLink tham gia: {{- invite}}"
+		}
 	}
 }

@@ -180,5 +180,11 @@
 		},
 		"mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`",
 		"global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!"
+	},
+	"together": {
+		"youtube": {
+			"err": "**{{- emoji }} | {{- author }},** Could not start **YouTube Together**!",
+			"success": "**{{- emoji }} | {{- author }},** Click the link below to Watch Youtube Together\nInvite Link: {{- invite}}"
+		}
 	}
 }
