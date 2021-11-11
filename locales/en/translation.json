@@ -182,9 +182,8 @@
 		"global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!"
 	},
 	"together": {
-		"youtube": {
-			"err": "**{{- emoji }} | {{- author }},** Could not start **YouTube Together**!",
-			"success": "**{{- emoji }} | {{- author }},** Click the link below to Watch Youtube Together\nInvite Link: {{- invite}}"
-		}
+		"err": "**{{- emoji }} | {{- author }},** Could not start **{{-appName}}**!",
+		"success": "**{{- emoji }} | {{- author }},** Click the link below to use {{-appName}}\nInvite Link: {{- invite}}",
+		"list": "**🔰 | {{- author }},** List supported activities `{{-stringName}}`"
 	}
 }

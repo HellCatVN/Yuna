@@ -179,9 +179,8 @@
 		"global_error": "**{{-icon}} | {{-author}} | **Đã xảy ra lỗi, thử lại sau nhaaa!!!"
 	},
 	"together": {
-		"youtube": {
-			"err": "**{{- emoji }} | {{- author }},** Không thể chạy **YouTube Together**!",
-			"success": "**{{- emoji }} | {{- author }},** Ấn đường dẫn để xem Youtube cùng nhau \nLink tham gia: {{- invite}}"
-		}
+		"err": "**{{- emoji }} | {{- author }},** Không thể chạy **{{- appName}}**!",
+		"success": "**{{- emoji }} | {{- author }},** Ấn đường dẫn để dùng {{- appName}}\nLink tham gia: {{- invite}}",
+		"list": "**🔰 | {{- author }},** Danh sách hoạt động được hỗ trợ `{{-stringName}}`"
 	}
 }
