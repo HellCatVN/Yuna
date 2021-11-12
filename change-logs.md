@@ -4,6 +4,18 @@ description: All Yuna's update logs
 
 # Change Logs
 
+## 3.0.0 - 2021-13-11
+
+### Fixed
+
+* Fix Soundcloud music source
+* Improve Spotify source searching
+
+### Changed
+
+* Migrate from Discord.js V12 to V13
+* Change multiple command UI/UX
+
 ## 2.0.0 - 2021-13-05
 
 ### Fixed
@@ -54,6 +66,4 @@ description: All Yuna's update logs
 ### Initial Project
 
 * Add all basic music bot commands
-
-
 
