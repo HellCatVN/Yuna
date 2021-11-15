@@ -8,6 +8,15 @@
 		},
 		"music": {
 			"nothing_playing": "**{{- emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
+		},
+		"premium": {
+			"not_active": "**{{- emoji}} | {{-author}}, ** You or Server need to active PREMIUM to using this feature!"
+		},
+		"user": {
+			"not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of user"
+		},
+		"guild": {
+			"not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of server"
 		}
 	},
 	"framework": {
@@ -17,6 +26,14 @@
 		"owner_only": "**{{- icon }} | {{- author }},** This command can only be used by the owner.",
 		"server_created": {
 			"error": "**{{- icon }} | {{- author }},** Not found or can not create server record"
+		}
+	},
+	"owner_only": {
+		"add_premium": {
+			"invalid_month": "**{{- emoji }} | {{- author }},** Invalid input month",
+			"invalid_object": "**{{- emoji }} | {{- author }},** Invalid user or guild input",
+			"active_user": "**{{- emoji }} | {{- author }},** Active user successfully",
+			"active_guild": "**{{- emoji }} | {{- author }},** Active server successfully"
 		}
 	},
 	"general": {
@@ -162,6 +179,10 @@
 			"on": "**{{-emoji}} | {{- author }}, **I have turn **on** vaporware mode",
 			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** vaporware mode"
 		},
+		"247": {
+			"on": "**{{-emoji}} | {{- author }}, **I have turn **on** 24/7 mode",
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** 24/7 mode"
+		},
 		"speed": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Playing speed is from **0.1** to **2.5**",
 			"change": "**{{-emoji}} | {{- author }}, ** Change playing speed to **{{speed}}**"
@@ -185,5 +206,11 @@
 		"err": "**{{- emoji }} | {{- author }},** Could not start **{{-appName}}**!",
 		"success": "**{{- emoji }} | {{- author }},** Click the link below to use {{-appName}}\nInvite Link: {{- invite}}",
 		"list": "**🔰 | {{- author }},** List supported activities `{{-stringName}}`"
+	},
+	"user": {
+		"get_account": {
+			"exist": "**{{- emoji }} | {{- author }},** Account is exist can't perform action!",
+			"success": "**{{- emoji }} | {{- author }},** Register new account successfully"
+		}
 	}
 }

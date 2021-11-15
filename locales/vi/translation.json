@@ -8,6 +8,15 @@
 		},
 		"music": {
 			"nothing_playing": "**{{- emoji}} | {{-author}}, ** Không có bài hát nào đang được phát"
+		},
+		"premium": {
+			"not_active": "**{{- emoji}} | {{-author}}, ** Bạn hoặc máy chủ cần kích hoạt PREMIUM để sử dụng tính năng này"
+		},
+		"user": {
+			"not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin thấy người dùng"
+		},
+		"guild": {
+			"not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin máy chủ"
 		}
 	},
 	"precondition": {
@@ -15,6 +24,12 @@
 		"server_created": {
 			"error": "**{{- icon }} | {{- author }},** Không có hoặc không thể tạo bản ghi của server"
 		}
+	},
+	"owner_only": {
+		"invalid_month": "**{{- emoji }} | {{- author }},** Tháng thêm vào không khả dụng",
+		"invalid_object": "**{{- emoji }} | {{- author }},** Người dùng hoặc máy chủ không hợp lệ",
+		"active_user": "**{{- emoji }} | {{- author }},** Đã kích hoạt thành công cho người dùng",
+		"active_guild": "**{{- emoji }} | {{- author }},** Đã kích hoạt thành công cho máy chủ"
 	},
 	"general": {
 		"ping": {
@@ -159,6 +174,10 @@
 			"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ vaporware",
 			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ vaporware"
 		},
+		"247": {
+			"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ 24/7",
+			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ 24/7"
+		},
 		"speed": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Tốc độ chỉ có thể thay đổi từ **0.1** - **2.5**",
 			"change": "**{{-emoji}} | {{- author }}, ** Đã chỉnh tốc độ phát thành **{{speed}}**"
@@ -182,5 +201,11 @@
 		"err": "**{{- emoji }} | {{- author }},** Không thể chạy **{{- appName}}**!",
 		"success": "**{{- emoji }} | {{- author }},** Ấn đường dẫn để dùng {{- appName}}\nLink tham gia: {{- invite}}",
 		"list": "**🔰 | {{- author }},** Danh sách hoạt động được hỗ trợ `{{-stringName}}`"
+	},
+	"user": {
+		"get_account": {
+			"exist": "**{{- emoji }} | {{- author }},** Tài khoản đã tồn tại, không thể thực hiện yêu cầu!",
+			"success": "**{{- emoji }} | {{- author }},** Đã tạo thành khoản thành công"
+		}
 	}
 }
