@@ -6,9 +6,7 @@ description: Frequently asked questions about Yuna.
 
 ## What is Yuna's default prefix ?
 
-It's **`.`** . \(It's dot\)
-
-
+It's **`?`** . (It's question mark)
 
 
 
