@@ -4,7 +4,7 @@ description: All Yuna's update logs
 
 # Change Logs
 
-## 3.0.0 - 2021-13-11
+## 3.0.0 - ( 2021-13-11 -> 2021-16-11)
 
 ### Fixed
 
@@ -15,6 +15,12 @@ description: All Yuna's update logs
 
 * Migrate from Discord.js V12 to V13
 * Change multiple command UI/UX
+
+### Added
+
+* Add PREMIUM for all command
+* Add `get-account` Commands
+* Add `247` Commands which allow bot to stay in channel 24/7
 
 ## 2.0.0 - 2021-13-05
 
