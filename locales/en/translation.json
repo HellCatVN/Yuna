@@ -89,7 +89,7 @@
 			},
 			"other": {
 				"name": "**{{-emoji}} Other**",
-				"details": "**OS:** `{{os}}`"
+				"details": "**・OS:** `{{os}}`"
 			},
 			"ram": {
 				"name": "**{{-emoji}} RAM**",

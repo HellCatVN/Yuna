@@ -84,7 +84,7 @@
 			},
 			"other": {
 				"name": "**{{-emoji}} Khác**",
-				"details": "**OS:** `{{os}}`"
+				"details": "**・OS:** `{{os}}`"
 			},
 			"ram": {
 				"name": "**{{-emoji}} RAM**",
