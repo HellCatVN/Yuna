@@ -60,17 +60,41 @@
 		},
 		"bot_info": {
 			"name": "Bot Information command",
-			"embed_key": "Bot information",
-			"embed_id": "ID",
-			"embed_username": "Username",
-			"embed_verified": "Verified",
-			"embed_default_language": "Default language",
+			"prefix": "**Prefix:** `{{prefixes}}`",
+			"support": {
+				"name": "{{-emoji}} Support Server",
+				"detail": "{{-emoji}} [Click here to join]({{- url}})"
+			},
 			"cannot_find_info": "Cannot find BotInfo in DB",
 			"un_synchronized": "Saved info has some changes need to be updated",
 			"already_exist": "Bot Info already exist and updated",
 			"create_success": "Successfully created Bot Info",
 			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
-			"description": "Setting bot information"
+			"description": "Setting bot information",
+			"basic":{
+				"name": "**📇 Basic Info**",
+				"details": "**・Name:** `{{tag}}`\n**・Uptime:** `{{time}}`"
+			},
+			"stats":{
+				"name": "**📊 Stats**",
+				"details": "**・Servers:** `{{server}}`\n**・Users:** `{{user}}`"
+			},
+			"version":{
+				"name": "**🔎 Version**",
+				"details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
+			},
+			"cpu": {
+				"name": "**🖥️ CPU**",
+				"details": "**・Cores:** `{{total}}`\n**・Speed:** `{{speed}}`"
+			},
+			"other": {
+				"name": "**{{-emoji}} Other**",
+				"details": "**OS:** `{{os}}`"
+			},
+			"ram": {
+				"name": "**{{-emoji}} RAM**",
+				"details": "**・Total:** `{{total}}`\n**・Free:** `{{free}}`"
+			}
 		},
 		"db": {
 			"db_unreachable": "Database unreachable!"

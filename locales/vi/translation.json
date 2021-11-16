@@ -54,18 +54,42 @@
 			"description": "Thông tin server"
 		},
 		"bot_info": {
-			"name": "Mã lệnh Bot Information",
-			"embed__key": "Thông tin bot",
-			"embed__id": "ID",
-			"embed__username": "Tên",
-			"embed__verified": "Đã xác thực",
-			"embed__default_language": "Ngôn ngữ mặc định",
+			"name": "Tra cứu thông tin BOT",
+			"prefix": "**Prefix:** `{{prefixes}}`",
+			"support": {
+				"name": "{{-emoji}} Máy chủ hỗ trợ",
+				"detail": "{{-emoji}} [Ấn vào đây để tham gia]({{- url}})"
+			},
 			"cannot_find_info": "Chưa lưu thông tin Bot",
 			"un_synchronized": "Thông tin đã lưu chưa được cập nhật",
 			"already_exist": "Thông tin bot đã cập nhật",
 			"create_success": "Lưu thông tin bot thành công",
 			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
-			"description": "Cài đặt thông tin bot"
+			"description": "Cài đặt thông tin bot",
+			"basic":{
+				"name": "**📇 Thông tin**",
+				"details": "**・Tên:** `{{tag}}`\n**・Uptime:** `{{time}}`"
+			},
+			"stats":{
+				"name": "**📊 Thông số**",
+				"details": "**・Máy chủ:** `{{server}}`\n**・Người dùng:** `{{user}}`"
+			},
+			"version":{
+				"name": "**🔎 Phiên bản**",
+				"details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
+			},
+			"cpu": {
+				"name": "**🖥️ CPU**",
+				"details": "**・Cores:** `{{total}}`\n**・Tốc độ:** `{{speed}} GHz`"
+			},
+			"other": {
+				"name": "**{{-emoji}} Khác**",
+				"details": "**OS:** `{{os}}`"
+			},
+			"ram": {
+				"name": "**{{-emoji}} RAM**",
+				"details": "**・Tổng:** `{{total}}`\n**・Trống:** `{{free}}`"
+			}
 		},
 		"db": {
 			"db_unreachable": "Chưa kết nối cơ sở dữ liệu!"
