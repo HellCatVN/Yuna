@@ -66,15 +66,15 @@
 			"create_success": "Lưu thông tin bot thành công",
 			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
 			"description": "Cài đặt thông tin bot",
-			"basic":{
+			"basic": {
 				"name": "**📇 Thông tin**",
 				"details": "**・Tên:** `{{tag}}`\n**・Uptime:** `{{time}}`"
 			},
-			"stats":{
+			"stats": {
 				"name": "**📊 Thông số**",
 				"details": "**・Máy chủ:** `{{server}}`\n**・Người dùng:** `{{user}}`"
 			},
-			"version":{
+			"version": {
 				"name": "**🔎 Phiên bản**",
 				"details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
 			},
@@ -211,7 +211,12 @@
 			"change": "**{{-emoji}} | {{- author }}, ** Đã thay đổi bass thành chế độ **{{mode}}**"
 		},
 		"volume": {
-			"set": "**🔊 | {{- author }},** Âm lượng đã được đặt ở mức **{{volume}}** %"
+			"set": "**🔊 | {{- author }},** Âm lượng đã được đặt ở mức **{{volume}}** %",
+			"description": "Thiết lập độ lớn của âm lượng",
+			"slash": {
+				"description": "Thiết lập độ lớn của âm lượng",
+				"value": "Độ lớn của âm lượng (0 - 100)"
+			}
 		}
 	},
 	"event": {

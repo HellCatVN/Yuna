@@ -71,15 +71,15 @@
 			"create_success": "Successfully created Bot Info",
 			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
 			"description": "Setting bot information",
-			"basic":{
+			"basic": {
 				"name": "**📇 Basic Info**",
 				"details": "**・Name:** `{{tag}}`\n**・Uptime:** `{{time}}`"
 			},
-			"stats":{
+			"stats": {
 				"name": "**📊 Stats**",
 				"details": "**・Servers:** `{{server}}`\n**・Users:** `{{user}}`"
 			},
-			"version":{
+			"version": {
 				"name": "**🔎 Version**",
 				"details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
 			},
@@ -119,7 +119,6 @@
 			"description": "Config bot prefix"
 		},
 		"help": {
-			"name": "Help command",
 			"embed_list": "Here is the list of commands of **{{-botName}}**!!! \n For more info on a specific command, use `{{-prefix}}help {command}`",
 			"embed_title": "{{-command}} command",
 			"embed_aliases": "Aliases",
@@ -128,7 +127,11 @@
 			"not_have_command": "**{{-icon}} | {{-botName}}** does not supported this command!!!",
 			"not_have_permission": "**{{-icon}} | {{-username}} | **You do not have permission to use this command!!!",
 			"example": "```{{-prefix}}{{alias}}```",
-			"description": "List of command"
+			"description": "List of command",
+			"slash": {
+				"description": "List of command",
+				"value": "Command name you want to get details"
+			}
 		}
 	},
 	"voice": {
@@ -216,7 +219,12 @@
 			"change": "**{{-emoji}} | {{- author }}, ** Bass is changed into **{{mode}}** mode"
 		},
 		"volume": {
-			"set": "**🔊 | {{- author }},** Volume succesfully changed to **{{volume}}** %"
+			"set": "**🔊 | {{- author }},** Volume succesfully changed to **{{volume}}** %",
+			"description": "Change or display bot volume",
+			"slash": {
+				"description": "Change or display bot volume",
+				"value": "The value to set volume to (0 - 100)"
+			}
 		}
 	},
 	"event": {
