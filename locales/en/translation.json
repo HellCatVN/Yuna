@@ -3,7 +3,7 @@
 		"on": "Bật",
 		"off": "Tắt",
 		"voice": {
-			"not_joined": "**{{- emoji}} | {{- author}}, ** You're not in voice channel",
+			"not_in_room": "**{{- emoji}} | {{- author}}, ** You're not in voice channel",
 			"not_same_room": "**{{- emoji}} | {{- author}}, ** You're not in the same voice channel!"
 		},
 		"music": {

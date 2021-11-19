@@ -3,7 +3,7 @@
 		"on": "On",
 		"off": "Off",
 		"voice": {
-			"not_joined": "**{{-emoji}} | {{-username}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
+			"not_in_room": "**{{-emoji}} | {{-author}}, **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
 			"not_same_room": "**{{- emoji}} | {{- author}}, ** Bạn đang không cùng phòng trò chuyện với tôi"
 		},
 		"music": {
