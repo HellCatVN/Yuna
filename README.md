@@ -28,4 +28,15 @@
 
 ---
 
-Check the docs on : Coming Soon
+### Run serve the documentation site in the local server.
+```
+yarn dev
+```
+### Build the docs
+```
+yarn build
+```
+### Launch the server at http://localhost:8080 to testing. 
+```
+yarn serve
+```

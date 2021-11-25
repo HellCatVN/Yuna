@@ -1,21 +1,14 @@
 {
-	"name": "yuna",
-	"version": "1.0.2",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"start": "nodemon index",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/HellCatVN/yuna.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/HellCatVN/yuna/issues"
-	},
-	"homepage": "https://github.com/HellCatVN/yuna#readme"
+  "name": "Yuna",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^0.20.1"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs --port 8080"
+  }
 }
