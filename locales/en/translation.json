@@ -1,7 +1,7 @@
 {
 	"common": {
-		"on": "Bật",
-		"off": "Tắt",
+		"on": "On",
+		"off": "Off",
 		"voice": {
 			"not_in_room": "**{{- emoji}} | {{- author}}, ** You're not in voice channel",
 			"not_same_room": "**{{- emoji}} | {{- author}}, ** You're not in the same voice channel!"
