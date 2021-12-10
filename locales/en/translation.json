@@ -150,9 +150,6 @@
 				"details": "**・Total:** `{{total}}`\n**・Free:** `{{free}}`"
 			}
 		},
-		"db": {
-			"db_unreachable": "Database unreachable!"
-		},
 		"set_server_lng": {
 			"name": "Set Server Language command",
 			"success": "**{{-icon}} | **Current language: {{-lng}}",
@@ -217,20 +214,44 @@
 		"end_queue": "**{{- endQueueEmoji}} | ** ***Queue has ended and I'm leaving, Matane~***",
 		"kicked": "**{{- emoji}} | ** ***I got kicked from the voice channel, and im clearing the queue.***",
 		"stop": {
-			"success": "**{{- emoji}} | {{-author}}, ** Stop playing music"
+			"success": "**{{- emoji}} | {{-author}}, ** Stop playing music",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"skip": {
-			"success": "**⏭️ | {{-author}}, ** The current song is skipped"
+			"success": "**⏭️ | {{-author}}, ** The current song is skipped",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"prev": {
 			"success": "**⏮️ | {{-author}}, ** Playing previous song",
-			"no_previous": "**{{-emoji}} | {{-author}}, ** There is no previous song ! Bakkkaa!!!"
+			"no_previous": "**{{-emoji}} | {{-author}}, ** There is no previous song ! Bakkkaa!!!",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"shuffle": {
-			"success": "**🔀 | {{-author}}, ** I have shuffle your playlist"
+			"success": "**🔀 | {{-author}}, ** I have shuffle your playlist",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"nowplay": {
-			"description": "View the current playing list"
+			"description": "View the current playing song",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"queue": {
 			"volume": "**Volume:** `{{cur_vol}}`",
@@ -239,38 +260,78 @@
 			"author": "Playlist | {{ guild_name }}",
 			"title": "🎶 Queue ({{ queue_length }})",
 			"now_playing": "⁣⁣            ⬐----**Now Playing**-----⬎\n**❯** [{{-songTitle }}]({{-songUrl }}) ({{ playedTime }}/{{ songLength }})\n            ⬑----**Now Playing**-----⬏\n",
-			"pagination": "Total Duration : {{ total_time }}   |   Page: {{ current_page }}/{{ total_page }}"
+			"pagination": "Total Duration : {{ total_time }}   |   Page: {{ current_page }}/{{ total_page }}",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"loop": {
 			"all": "All",
 			"single": "Single",
 			"none": "Off",
 			"on": "**🔁 | {{- author }}, **I have turn **on** loop all music queue",
-			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** loop all music queue"
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** loop all music queue",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"repeat": {
 			"on": "**🔂 | {{- author }}, **I have turn **on** repeat the current song",
-			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** repeat the current song"
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** repeat the current song",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"nightcore": {
 			"on": "**{{-emoji}} | {{- author }}, **I have turn **on** nightcore mode",
-			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** nightcore mode"
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** nightcore mode",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"vaporware": {
 			"on": "**{{-emoji}} | {{- author }}, **I have turn **on** vaporware mode",
-			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** vaporware mode"
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** vaporware mode",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"247": {
 			"on": "**{{-emoji}} | {{- author }}, **I have turn **on** 24/7 mode",
-			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** 24/7 mode"
+			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** 24/7 mode",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"speed": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Playing speed is from **0.1** to **2.5**",
-			"change": "**{{-emoji}} | {{- author }}, ** Change playing speed to **{{speed}}**"
+			"change": "**{{-emoji}} | {{- author }}, ** Change playing speed to **{{speed}}**",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"bassboost": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Available bass mode is `off, low, medium, high, insane, miaow`",
-			"change": "**{{-emoji}} | {{- author }}, ** Bass is changed into **{{mode}}** mode"
+			"change": "**{{-emoji}} | {{- author }}, ** Bass is changed into **{{mode}}** mode",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"volume": {
 			"set": "**🔊 | {{- author }},** Volume succesfully changed to **{{volume}}** %",
@@ -278,6 +339,32 @@
 			"slash": {
 				"description": "Change or display bot volume",
 				"value": "The value to set volume to (0 - 100)"
+			}
+		},
+		"pause": {
+			"set": "**⏸️ | {{- author }},** Đã tạm dừng phát nhạc",
+			"paused": "**{{-emoji}} | {{- author }}, ** Hmm... hình như nhạc đang dừng mà",
+			"description": "Tạm dừng phát nhạc",
+			"example": "",
+			"slash": {
+				"description": "Tạm dừng phát nhạc"
+			}
+		},
+		"resume": {
+			"set": "**⏯️ | {{- author }},** Đã tiếp tục phát nhạc",
+			"playing": "**{{-emoji}} | {{- author }}, ** Ơ kìa đang phát mà !!!",
+			"description": "Tiếp tục phát nhạc",
+			"example": "",
+			"slash": {
+				"description": "Tiếp tục phát nhạc"
+			}
+		},
+		"clear": {
+			"run": "**{{- emoji}} | {{- author }},** Đã xóa hết danh sách đang phát",
+			"description": "Xóa danh sách đang phát",
+			"example": "",
+			"slash": {
+				"description": "Xóa danh sách đang phát"
 			}
 		}
 	},

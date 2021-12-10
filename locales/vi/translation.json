@@ -145,9 +145,6 @@
 				"details": "**・Tổng:** `{{total}}`\n**・Trống:** `{{free}}`"
 			}
 		},
-		"db": {
-			"db_unreachable": "Chưa kết nối cơ sở dữ liệu!"
-		},
 		"set_server_lng": {
 			"name": "Mã lệnh Set Server Language",
 			"success": "**{{-icon}} | **Ngôn ngữ hiện tại: {{-lng}}",
@@ -209,20 +206,44 @@
 		"end_queue": "**{{- endQueueEmoji}} | ** ***Danh sách phát hiện đã kết thúc , hẹn gặp lại***",
 		"kicked": "**{{- emoji}} | ** ***BOT bị kick ra khỏi kênh trò truyện, làm mới danh sách phát***",
 		"stop": {
-			"success": "**{{- emoji}} | {{-author}}, ** Đã dừng phát nhạc"
+			"success": "**{{- emoji}} | {{-author}}, ** Đã dừng phát nhạc",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"skip": {
-			"success": "**⏭️ | {{-author}}, ** Bài hát đã được bỏ qua"
+			"success": "**⏭️ | {{-author}}, ** Bài hát đã được bỏ qua",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"prev": {
 			"success": "**⏮️ | {{-author}}, **Đã trở lại bài hát trước đó",
-			"no_previous": "**{{-emoji}} | {{-author}}, ** Không có bài hát nào đã được phát trước đó"
+			"no_previous": "**{{-emoji}} | {{-author}}, ** Không có bài hát nào đã được phát trước đó",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"shuffle": {
-			"success": "**🔀 | {{-author}}, ** Đã trộn danh sách bài hát"
+			"success": "**🔀 | {{-author}}, ** Đã trộn danh sách bài hát",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"nowplay": {
-			"description": "Xem danh sách bài hát được phát"
+			"description": "Xem danh sách bài hát được phát",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"queue": {
 			"volume": "**Âm lượng:** `{{cur_vol}}`",
@@ -231,45 +252,112 @@
 			"author": "Danh sách bài hát | {{ guild_name }}",
 			"title": "🎶 Danh sách ({{ queue_length }})",
 			"now_playing": "⁣⁣            ⬐----**Đang Phát**-----⬎\n**❯** [{{-songTitle }}]({{-songUrl }}) ({{ playedTime }}/{{ songLength }})\n            ⬑----**Đang Phát**-----⬏\n",
-			"pagination": "Tổng thời gian phát : {{ total_time }}   |   Trang: {{ current_page }}/{{ total_page }}"
+			"pagination": "Tổng thời gian phát : {{ total_time }}   |   Trang: {{ current_page }}/{{ total_page }}",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"loop": {
 			"all": "Tất cả",
 			"single": "Bài hát",
 			"none": "Tắt",
 			"on": "**🔁 | {{- author }}, **Đã **bật** lặp lại danh sách bài hát",
-			"off": "**{{-emoji}} | {{- author }}, **Đã **tắt** lặp lại danh sách bài hát"
+			"off": "**{{-emoji}} | {{- author }}, **Đã **tắt** lặp lại danh sách bài hát",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"repeat": {
 			"on": "**🔂 | {{- author }}, **Đã **bật** lặp lại bài hát hiện tại",
-			"off": "**{{-emoji}} | {{- author }}, **Đã **tắt** lặp lại bài hát hiện tại"
+			"off": "**{{-emoji}} | {{- author }}, **Đã **tắt** lặp lại bài hát hiện tại",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"nightcore": {
 			"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ nightcore",
-			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ nightcore"
+			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ nightcore",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"vaporware": {
 			"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ vaporware",
-			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ vaporware"
+			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ vaporware",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"247": {
 			"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ 24/7",
-			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ 24/7"
+			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ 24/7",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"speed": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Tốc độ chỉ có thể thay đổi từ **0.1** - **2.5**",
-			"change": "**{{-emoji}} | {{- author }}, ** Đã chỉnh tốc độ phát thành **{{speed}}**"
+			"change": "**{{-emoji}} | {{- author }}, ** Đã chỉnh tốc độ phát thành **{{speed}}**",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"bassboost": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Chỉ nhận các chế độ `off, low, medium, high, insane, miaow`",
-			"change": "**{{-emoji}} | {{- author }}, ** Đã thay đổi bass thành chế độ **{{mode}}**"
+			"change": "**{{-emoji}} | {{- author }}, ** Đã thay đổi bass thành chế độ **{{mode}}**",
+			"description": "",
+			"example": "",
+			"slash": {
+				"description": ""
+			}
 		},
 		"volume": {
 			"set": "**🔊 | {{- author }},** Âm lượng đã được đặt ở mức **{{volume}}** %",
 			"description": "Thiết lập độ lớn của âm lượng",
+			"example": "",
 			"slash": {
 				"description": "Thiết lập độ lớn của âm lượng",
 				"value": "Độ lớn của âm lượng (0 - 100)"
+			}
+		},
+		"pause": {
+			"set": "**⏸️ | {{- author }},** Đã tạm dừng phát nhạc",
+			"paused": "**{{-emoji}} | {{- author }}, ** Hmm... hình như nhạc đang dừng mà",
+			"description": "Tạm dừng phát nhạc",
+			"example": "",
+			"slash": {
+				"description": "Tạm dừng phát nhạc"
+			}
+		},
+		"resume": {
+			"set": "**⏸️ | {{- author }},** Đã tiếp tục phát nhạc",
+			"playing": "**{{-emoji}} | {{- author }}, ** Ơ kìa đang phát mà !!!",
+			"description": "Tiếp tục phát nhạc",
+			"example": "",
+			"slash": {
+				"description": "Tiếp tục phát nhạc"
+			}
+		},
+		"clear": {
+			"run": "**{{- emoji}} | {{- author }},** Đã xóa hết danh sách đang phát",
+			"description": "Xóa danh sách đang phát",
+			"example": "",
+			"slash": {
+				"description": "Xóa danh sách đang phát"
 			}
 		}
 	},
