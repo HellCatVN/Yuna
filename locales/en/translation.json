@@ -366,6 +366,26 @@
 			"slash": {
 				"description": "Xóa danh sách đang phát"
 			}
+		},
+		"remove": {
+			"index_error" : "**{{- emoji}} | {{- author }},** Số thứ tự nhập vào không hợp lệ",
+			"out_range" : "**{{- emoji}} | {{- author }},** Số thứ tự nhập vào lớn hơn số bài hát đang có",
+			"one_song" : "**{{- emoji}} | {{- author }},** Đã xóa bài hát {{- title}} ra khỏi danh sách phát",
+			"invalid" : "**{{- emoji}} | {{- author }},** Số bắt đầu lớn hơn số kết thúc",
+			"multiple" : "**{{- emoji}} | {{- author }},** Đã xóa {{ number }} ra khỏi danh sách phát",
+			"description": "Xóa bài hát ra khỏi danh sách phát",
+			"example": "",
+			"slash": {
+				"description": "Xóa bài hát ra khỏi danh sách phát"
+			}
+		},
+		"join" : {
+			"success": "**{{- emoji}} | {{- author }},** Yuna đã tham gia phòng của bạn",
+			"description": "Tham gia phòng trò chuyện của bạn",
+			"example": "",
+			"slash": {
+				"description": "Tham gia phòng trò chuyện của bạn"
+			}
 		}
 	},
 	"event": {
