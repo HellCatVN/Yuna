@@ -343,49 +343,49 @@
 			}
 		},
 		"pause": {
-			"set": "**⏸️ | {{- author }},** Đã tạm dừng phát nhạc",
-			"paused": "**{{-emoji}} | {{- author }}, ** Hmm... hình như nhạc đang dừng mà",
-			"description": "Tạm dừng phát nhạc",
+			"set": "**⏸️ | {{- author }},** Paused",
+			"paused": "**{{-emoji}} | {{- author }}, ** Hmm... It's already paused",
+			"description": "Pause",
 			"example": "",
 			"slash": {
-				"description": "Tạm dừng phát nhạc"
+				"description": "Pause"
 			}
 		},
 		"resume": {
-			"set": "**⏯️ | {{- author }},** Đã tiếp tục phát nhạc",
-			"playing": "**{{-emoji}} | {{- author }}, ** Ơ kìa đang phát mà !!!",
-			"description": "Tiếp tục phát nhạc",
+			"set": "**⏯️ | {{- author }},** resumed",
+			"playing": "**{{-emoji}} | {{- author }}, ** Oops, It's playing !!!",
+			"description": "resume",
 			"example": "",
 			"slash": {
-				"description": "Tiếp tục phát nhạc"
+				"description": "resume"
 			}
 		},
 		"clear": {
-			"run": "**{{- emoji}} | {{- author }},** Đã xóa hết danh sách đang phát",
-			"description": "Xóa danh sách đang phát",
+			"run": "**{{- emoji}} | {{- author }},** Cleared all playlist",
+			"description": "Clear playlist",
 			"example": "",
 			"slash": {
-				"description": "Xóa danh sách đang phát"
+				"description": "Clear playlist"
 			}
 		},
 		"remove": {
-			"index_error": "**{{- emoji}} | {{- author }},** Số thứ tự nhập vào không hợp lệ",
-			"out_range": "**{{- emoji}} | {{- author }},** Số thứ tự nhập vào lớn hơn số bài hát đang có",
-			"one_song": "**{{- emoji}} | {{- author }},** Đã xóa bài hát {{- title}} ra khỏi danh sách phát",
-			"invalid": "**{{- emoji}} | {{- author }},** Số bắt đầu lớn hơn số kết thúc",
-			"multiple": "**{{- emoji}} | {{- author }},** Đã xóa {{ number }} ra khỏi danh sách phát",
-			"description": "Xóa bài hát ra khỏi danh sách phát",
+			"index_error" : "**{{- emoji}} | {{- author }},** Invalid number",
+			"out_range" : "**{{- emoji}} | {{- author }},** Entered number is out of range",
+			"one_song" : "**{{- emoji}} | {{- author }},** Removed song {{- title}} out of list",
+			"invalid" : "**{{- emoji}} | {{- author }},** Start number is larger than end number",
+			"multiple" : "**{{- emoji}} | {{- author }},** Removed {{ number }} songs from list",
+			"description": "Remove a song from list",
 			"example": "",
 			"slash": {
-				"description": "Xóa bài hát ra khỏi danh sách phát"
+				"description": "Remove a song from list"
 			}
 		},
-		"join": {
-			"success": "**{{- emoji}} | {{- author }},** Yuna đã tham gia phòng của bạn",
-			"description": "Tham gia phòng trò chuyện của bạn",
+		"join" : {
+			"success": "**{{- emoji}} | {{- author }},** Yuna joined your room",
+			"description": "Join your voice room",
 			"example": "",
 			"slash": {
-				"description": "Tham gia phòng trò chuyện của bạn"
+				"description": "Join your voice room"
 			}
 		},
 		"seek": {
