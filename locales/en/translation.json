@@ -284,10 +284,10 @@
 		"repeat": {
 			"on": "**🔂 | {{- author }}, **I have turn **on** repeat the current song",
 			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** repeat the current song",
-			"description": "",
+			"description": "Lặp lại bài hát hiện tại",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Lặp lại bài hát hiện tại"
 			}
 		},
 		"nightcore": {
