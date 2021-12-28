@@ -215,43 +215,43 @@
 		"end_queue": "**{{- endQueueEmoji}} | ** ***Queue has ended and I'm leaving, Matane~***",
 		"kicked": "**{{- emoji}} | ** ***I got kicked from the voice channel, and im clearing the queue.***",
 		"stop": {
-			"success": "**{{- emoji}} | {{-author}}, ** Stop playing music",
-			"description": "",
+			"success": "**{{- emoji}} | {{-author}}, ** Đã dừng phát nhạc",
+			"description": "Dừng bài hát đang hát và thoát phòng",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Dừng bài hát đang hát và thoát phòng"
 			}
 		},
 		"skip": {
 			"success": "**⏭️ | {{-author}}, ** The current song is skipped",
-			"description": "",
+			"description": "Bỏ qua bài hát đang phát",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Bỏ qua bài hát đang phát"
 			}
 		},
 		"prev": {
 			"success": "**⏮️ | {{-author}}, ** Playing previous song",
 			"no_previous": "**{{-emoji}} | {{-author}}, ** There is no previous song ! Bakkkaa!!!",
-			"description": "",
+			"description": "Trở lại bài hát trước đó",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Trở lại bài hát trước đó"
 			}
 		},
 		"shuffle": {
 			"success": "**🔀 | {{-author}}, ** I have shuffle your playlist",
-			"description": "",
+			"description": "Trộn danh sách bài hát",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Trộn danh sách bài hát"
 			}
 		},
 		"nowplay": {
 			"description": "View the current playing song",
-			"example": "",
+			"example": "Hiển thị thông tin của bài hát đang phát",
 			"slash": {
-				"description": ""
+				"description": "Hiển thị thông tin của bài hát đang phát"
 			}
 		},
 		"queue": {
@@ -262,10 +262,11 @@
 			"title": "🎶 Queue ({{ queue_length }})",
 			"now_playing": "⁣⁣            ⬐----**Now Playing**-----⬎\n**❯** [{{-songTitle }}]({{-songUrl }}) ({{ playedTime }}/{{ songLength }})\n            ⬑----**Now Playing**-----⬏\n",
 			"pagination": "Total Duration : {{ total_time }}   |   Page: {{ current_page }}/{{ total_page }}",
-			"description": "",
+			"description": "Hiện thị danh sách bài hát đang phát",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Hiện thị danh sách bài hát đang phát",
+				"value": "Trang cần tra cứu"
 			}
 		},
 		"loop": {
@@ -274,10 +275,10 @@
 			"none": "Off",
 			"on": "**🔁 | {{- author }}, **I have turn **on** loop all music queue",
 			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** loop all music queue",
-			"description": "",
+			"description": "Lặp lại hát hiện tại hoặc toàn bộ danh sách",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Lặp lại hát hiện tại hoặc toàn bộ danh sách"
 			}
 		},
 		"repeat": {
@@ -292,10 +293,10 @@
 		"nightcore": {
 			"on": "**{{-emoji}} | {{- author }}, **I have turn **on** nightcore mode",
 			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** nightcore mode",
-			"description": "",
+			"description": "Bật / tắt chế độ nightcore",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Bật / tắt chế độ nightcore"
 			}
 		},
 		"vaporware": {
@@ -310,28 +311,39 @@
 		"247": {
 			"on": "**{{-emoji}} | {{- author }}, **I have turn **on** 24/7 mode",
 			"off": "**{{-emoji}} | {{- author }}, **I have turn **off** 24/7 mode",
-			"description": "",
+			"description": "Bật chế độ 247 để Yuna luôn ở trong phòng của bạn",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Bật chế độ 247 để Yuna luôn ở trong phòng của bạn"
 			}
 		},
 		"speed": {
-			"err1": "**{{-emoji}} | {{- author }}, ** Playing speed is from **0.1** to **2.5**",
-			"change": "**{{-emoji}} | {{- author }}, ** Change playing speed to **{{speed}}**",
-			"description": "",
+			"err1": "**{{-emoji}} | {{- author }}, ** Tốc độ chỉ có thể thay đổi từ **0.1** - **2.5**",
+			"change": "**{{-emoji}} | {{- author }}, ** Đã chỉnh tốc độ phát thành **{{speed}}**",
+			"description": "Chỉnh tốc độ của bài hát đang phát",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Chỉnh tốc độ của bài hát đang phát",
+				"value": "Giá trị cần chỉnh"
 			}
 		},
 		"bassboost": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Available bass mode is `off, low, medium, high, insane, miaow`",
 			"change": "**{{-emoji}} | {{- author }}, ** Bass is changed into **{{mode}}** mode",
-			"description": "",
+			"description": "Tăng cường độ của âm trầm (bass)",
 			"example": "",
+			"select": {
+				"title": "Vui lòng chọn cấp độ tăng cường âm trầm (bass) bạn muốn",
+				"placeholder": "Chưa chọn cấp độ tăng cường âm trầm (bass)",
+				"off": "Tắt tăng cường âm trầm",
+				"low": "Tăng cường âm trầm mức độ thấp",
+				"medium": "Tăng cường âm trầm mức độ vừa",
+				"high": "Tăng cường âm trầm mức độ cao",
+				"insane": "Tăng cường âm trầm mức độ kinh khủng",
+				"miaow": "Mức độ thật không thể tin được"
+			},
 			"slash": {
-				"description": ""
+				"description": "Tăng cường độ của âm trầm (bass)"
 			}
 		},
 		"volume": {
@@ -345,19 +357,19 @@
 		"pause": {
 			"set": "**⏸️ | {{- author }},** Paused",
 			"paused": "**{{-emoji}} | {{- author }}, ** Hmm... It's already paused",
-			"description": "Pause",
+			"description": "Pause current playing song",
 			"example": "",
 			"slash": {
-				"description": "Pause"
+				"description": "Pause current playing song"
 			}
 		},
 		"resume": {
 			"set": "**⏯️ | {{- author }},** resumed",
 			"playing": "**{{-emoji}} | {{- author }}, ** Oops, It's playing !!!",
-			"description": "resume",
+			"description": "Resume paused song",
 			"example": "",
 			"slash": {
-				"description": "resume"
+				"description": "Resume paused song"
 			}
 		},
 		"clear": {
@@ -369,18 +381,18 @@
 			}
 		},
 		"remove": {
-			"index_error" : "**{{- emoji}} | {{- author }},** Invalid number",
-			"out_range" : "**{{- emoji}} | {{- author }},** Entered number is out of range",
-			"one_song" : "**{{- emoji}} | {{- author }},** Removed song {{- title}} out of list",
-			"invalid" : "**{{- emoji}} | {{- author }},** Start number is larger than end number",
-			"multiple" : "**{{- emoji}} | {{- author }},** Removed {{ number }} songs from list",
+			"index_error": "**{{- emoji}} | {{- author }},** Invalid number",
+			"out_range": "**{{- emoji}} | {{- author }},** Entered number is out of range",
+			"one_song": "**{{- emoji}} | {{- author }},** Removed song {{- title}} out of list",
+			"invalid": "**{{- emoji}} | {{- author }},** Start number is larger than end number",
+			"multiple": "**{{- emoji}} | {{- author }},** Removed {{ number }} songs from list",
 			"description": "Remove a song from list",
 			"example": "",
 			"slash": {
 				"description": "Remove a song from list"
 			}
 		},
-		"join" : {
+		"join": {
 			"success": "**{{- emoji}} | {{- author }},** Yuna joined your room",
 			"description": "Join your voice room",
 			"example": "",

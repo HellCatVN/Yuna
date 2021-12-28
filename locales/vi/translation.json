@@ -203,47 +203,55 @@
 			"channel": "Kênh",
 			"time": "Thời Gian"
 		},
+		"play": {
+			"description": "Phát bài hát từ đường dẫn (url) hoặc tên bài hát. (Hỗ trợ: Youtube, Soundcloud, Spotify, ...)",
+			"example": "",
+			"slash": {
+				"description": "Phát bài hát từ đường dẫn (url) hoặc tên bài hát. (Hỗ trợ: Youtube, Soundcloud, ...)",
+				"value": "Nhập tên bài hát hoặc đường dẫn (url)"
+			}
+		},
 		"playing": "**{{- playingEmoji}} | {{- author}}, ** Đang phát bài hát **{{- songName}}**",
 		"end_queue": "**{{- endQueueEmoji}} | ** ***Danh sách phát hiện đã kết thúc , hẹn gặp lại***",
 		"kicked": "**{{- emoji}} | ** ***BOT bị kick ra khỏi kênh trò truyện, làm mới danh sách phát***",
 		"stop": {
 			"success": "**{{- emoji}} | {{-author}}, ** Đã dừng phát nhạc",
-			"description": "",
+			"description": "Dừng bài hát đang hát và thoát phòng",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Dừng bài hát đang hát và thoát phòng"
 			}
 		},
 		"skip": {
 			"success": "**⏭️ | {{-author}}, ** Bài hát đã được bỏ qua",
-			"description": "",
+			"description": "Bỏ qua bài hát đang phát",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Bỏ qua bài hát đang phát"
 			}
 		},
 		"prev": {
 			"success": "**⏮️ | {{-author}}, **Đã trở lại bài hát trước đó",
 			"no_previous": "**{{-emoji}} | {{-author}}, ** Không có bài hát nào đã được phát trước đó",
-			"description": "",
+			"description": "Trở lại bài hát trước đó",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Trở lại bài hát trước đó"
 			}
 		},
 		"shuffle": {
 			"success": "**🔀 | {{-author}}, ** Đã trộn danh sách bài hát",
-			"description": "",
+			"description": "Trộn danh sách bài hát",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Trộn danh sách bài hát"
 			}
 		},
 		"nowplay": {
 			"description": "Xem danh sách bài hát được phát",
-			"example": "",
+			"example": "Hiển thị thông tin của bài hát đang phát",
 			"slash": {
-				"description": ""
+				"description": "Hiển thị thông tin của bài hát đang phát"
 			}
 		},
 		"queue": {
@@ -254,10 +262,11 @@
 			"title": "🎶 Danh sách ({{ queue_length }})",
 			"now_playing": "⁣⁣            ⬐----**Đang Phát**-----⬎\n**❯** [{{-songTitle }}]({{-songUrl }}) ({{ playedTime }}/{{ songLength }})\n            ⬑----**Đang Phát**-----⬏\n",
 			"pagination": "Tổng thời gian phát : {{ total_time }}   |   Trang: {{ current_page }}/{{ total_page }}",
-			"description": "",
+			"description": "Hiện thị danh sách bài hát đang phát",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Hiện thị danh sách bài hát đang phát",
+				"value": "Trang cần tra cứu"
 			}
 		},
 		"loop": {
@@ -266,28 +275,28 @@
 			"none": "Tắt",
 			"on": "**🔁 | {{- author }}, **Đã **bật** lặp lại danh sách bài hát",
 			"off": "**{{-emoji}} | {{- author }}, **Đã **tắt** lặp lại danh sách bài hát",
-			"description": "",
+			"description": "Lặp lại toàn bộ danh sách",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Lặp lại toàn bộ danh sách"
 			}
 		},
 		"repeat": {
 			"on": "**🔂 | {{- author }}, **Đã **bật** lặp lại bài hát hiện tại",
 			"off": "**{{-emoji}} | {{- author }}, **Đã **tắt** lặp lại bài hát hiện tại",
-			"description": "",
+			"description": "Lặp lại bài hát hiện tại",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Lặp lại bài hát hiện tại"
 			}
 		},
 		"nightcore": {
 			"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ nightcore",
 			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ nightcore",
-			"description": "",
+			"description": "Bật / tắt chế độ nightcore",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Bật / tắt chế độ nightcore"
 			}
 		},
 		"vaporware": {
@@ -302,28 +311,39 @@
 		"247": {
 			"on": "**{{-emoji}} | {{- author }}, **Mình đã **bật** chế độ 24/7",
 			"off": "**{{-emoji}} | {{- author }}, **Mình đã **tắt** chế độ 24/7",
-			"description": "",
+			"description": "Bật chế độ 247 để Yuna luôn ở trong phòng của bạn",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Bật chế độ 247 để Yuna luôn ở trong phòng của bạn"
 			}
 		},
 		"speed": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Tốc độ chỉ có thể thay đổi từ **0.1** - **2.5**",
 			"change": "**{{-emoji}} | {{- author }}, ** Đã chỉnh tốc độ phát thành **{{speed}}**",
-			"description": "",
+			"description": "Chỉnh tốc độ của bài hát đang phát",
 			"example": "",
 			"slash": {
-				"description": ""
+				"description": "Chỉnh tốc độ của bài hát đang phát",
+				"value": "Giá trị cần chỉnh"
 			}
 		},
 		"bassboost": {
 			"err1": "**{{-emoji}} | {{- author }}, ** Chỉ nhận các chế độ `off, low, medium, high, insane, miaow`",
 			"change": "**{{-emoji}} | {{- author }}, ** Đã thay đổi bass thành chế độ **{{mode}}**",
-			"description": "",
+			"description": "Tăng cường độ của âm trầm (bass)",
 			"example": "",
+			"select": {
+				"title": "Vui lòng chọn cấp độ tăng cường âm trầm (bass) bạn muốn",
+				"placeholder": "Chưa chọn cấp độ tăng cường âm trầm (bass)",
+				"off": "Tắt tăng cường âm trầm",
+				"low": "Tăng cường âm trầm mức độ thấp",
+				"medium": "Tăng cường âm trầm mức độ vừa",
+				"high": "Tăng cường âm trầm mức độ cao",
+				"insane": "Tăng cường âm trầm mức độ kinh khủng",
+				"miaow": "Mức độ thật không thể tin được"
+			},
 			"slash": {
-				"description": ""
+				"description": "Tăng cường độ của âm trầm (bass)"
 			}
 		},
 		"volume": {
@@ -370,6 +390,8 @@
 			"description": "Xóa bài hát ra khỏi danh sách phát",
 			"example": "",
 			"slash": {
+				"from": "Số thứ tự muốn xóa hoặc số bắt đầu xóa",
+				"to": "Số kết thúc xóa",
 				"description": "Xóa bài hát ra khỏi danh sách phát"
 			}
 		},
@@ -401,6 +423,15 @@
 				"description": "Tra cứu lời bài hát của bài hát hiện tại hoặc bài hát nhập vào",
 				"value": "Thời gian muốn chuyển đến (Ví dụ: 1:00)",
 				"title": "Tên bài hát muốn tra cứu"
+			}
+		},
+		"autoplay": {
+			"on": "**🔁 | {{- author }}, **Đã **bật** tự động phát bài hát",
+			"off": "**{{-emoji}} | {{- author }}, **Đã **tắt** tự động phát bài hát",
+			"description": "Bật / Tắt chế độ tự động phát bài hát.",
+			"example": "",
+			"slash": {
+				"description": "Bật / Tắt chế độ tự động phát bài hát."
 			}
 		}
 	},
