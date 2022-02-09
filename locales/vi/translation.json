@@ -1,4 +1,10 @@
 {
+	"button": {
+		"home": "Trang chủ",
+		"doc": "Hướng dẫn",
+		"support_server": "Hỗ trợ",
+		"invite": "Mời BOT"
+	},
 	"common": {
 		"on": "On",
 		"off": "Off",
