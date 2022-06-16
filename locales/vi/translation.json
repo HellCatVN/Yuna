@@ -441,6 +441,14 @@
 			}
 		}
 	},
+	"tarot": {
+		"daily": {
+			"title": "**{{- emoji }} | Nyan =( ^>ܫ< ^)= ** , Tôi đã chọn được thẻ {{ cardTitle }} dành cho bạn!",
+			"description_title": "**{{- emoji }} Nghĩa tổng quan của lá : {{ cardTitle}}**",
+			"yes_no_title": "**Chìa khóa trả lời câu hỏi có hay không:**",
+			"keyword": "** {{- emoji }} Từ khóa:**"
+		}
+	},
 	"event": {
 		"message_create": {
 			"warning_invite_link": "**{{-icon}} | {{-author}} | **Bạn ơi đừng gửi link server khác nha!!!"
