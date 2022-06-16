@@ -1,9 +1,9 @@
 {
 	"button": {
-		"home": "Trang chủ",
-		"doc": "Hướng dẫn",
-		"support_server": "Hỗ trợ",
-		"invite": "Mời BOT"
+		"home": "Home",
+		"doc": "Documentation",
+		"support_server": "Support Server",
+		"invite": "Invite Link"
 	},
 	"common": {
 		"on": "On",
@@ -13,7 +13,7 @@
 			"not_same_room": "**{{- emoji}} | {{- author}}, ** You're not in the same voice channel!"
 		},
 		"music": {
-			"no_player": "Không tìm thấy chương trình phát nhạc",
+			"no_player": "Can't find player",
 			"nothing_playing": "**{{- emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
 		},
 		"premium": {
