@@ -13,7 +13,7 @@
     <img alt="GitHub package.json version (branch)" src="https://img.shields.io/github/package-json/v/HellCatVN/yuna/main?color=pink&label=Current%20Version">
   </a>
   <a href="https://nodejs.org/dist/latest-v14.x/">
-    <img src="https://img.shields.io/static/v1?label=node&message=>=14.15.4&color=success&logo=Node.js&logoColor=white" alt="Node Requirements">
+    <img src="https://img.shields.io/static/v1?label=node&message=%3E=16.18.1&color=success&logo=Node.js&logoColor=white" alt="Node Requirements">
   </a>
   <a href="https://github.com/HellCatVN/yuna/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/HellCatVN/yuna?color=pink&label=License" alt="LICENSE">
